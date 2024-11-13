@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Smart i</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as other pages) -->
+
+    <header class="projects-header">
+        <h1>Our Projects</h1>
+        <p>Exploring innovative solutions through technology and mathematics</p>
+    </header>
+
+    <section class="project-categories">
+        <button class="category-btn active">All</button>
+        <button class="category-btn">AI & Machine Learning</button>
+        <button class="category-btn">Computer Vision</button>
+        <button class="category-btn">Automation</button>
+    </section>
+
+    <section class="projects-grid">
+        <!-- Facial Recognition Project -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="facial-recognition.jpg" alt="Facial Recognition System">
+            </div>
+            <div class="project-content">
+                <h3>Facial Recognition Attendance System</h3>
+                <div class="project-tags">
+                    <span class="project-tag">AI</span>
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Python</span>
+                </div>
+                <p class="project-description">
+                    Advanced attendance tracking system using facial recognition technology for automated student attendance management.
+                </p>
+                <button class="cta-button primary" onclick="showProjectDetails('facial-recognition')">
+                    View Details
+                </button>
+            </div>
+        </div>
+
+        <!-- Library System Project -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="library-system.jpg" alt="Library System">
+            </div>
+            <div class="project-content">
+                <h3>Smart Library System</h3>
+                <div class="project-tags">
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">IoT</span>
+                    <span class="project-tag">Python</span>
+                </div>
+                <p class="project-description">
+                    Camera-based library attendance tracking system for efficient monitoring and management of library usage.
+                </p>
+                <button class="cta-button primary" onclick="showProjectDetails('library-system')">
+                    View Details
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+            <div id="projectDetails"></div>
+        </div>
+    </div>
+
+    <section class="project-cta">
+        <h3>Have a Project in Mind?</h3>
+        <p>We're always excited to take on new challenges and create innovative solutions.</p>
+        <a href="contact.html" class="cta-button primary">Let's Collaborate</a>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+
+    <script src="script.js"></script>
+</body>
+</html> 
