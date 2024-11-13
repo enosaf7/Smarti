@@ -9,81 +9,121 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Smart i</div>
+        <div class="logo">
+            <img src="logo.png" alt="Smart i Logo">
+            <span>Smart i</span>
+        </div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="slideshow">
             <div class="slide fade">
-                <img src="th.jpg" alt="Tech Image 1">
+                <img src="slide1.jpg" alt="Innovation">
+                <div class="slide-caption">Innovating Tomorrow's Solutions</div>
             </div>
             <div class="slide fade">
-                <img src="th (1).jpg" alt="Tech Image 2">
+                <img src="slide2.jpg" alt="Technology">
+                <div class="slide-caption">Powered by Technology</div>
             </div>
-            <!-- Navigation buttons -->
+            <div class="slide fade">
+                <img src="slide3.jpg" alt="Community">
+                <div class="slide-caption">Building Tech Community</div>
+            </div>
             <button class="slideshow-btn prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="slideshow-btn next" onclick="changeSlide(1)">&#10095;</button>
         </div>
+        
         <div class="hero-content">
             <h1>Welcome to Smart i</h1>
-            <p>A tech-driven student community from UMaT's Mathematical Science Department</p>
-            <a href="#about" class="cta-button">Learn More</a>
+            <p>Empowering Innovation in Mathematical Sciences</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="cta-button primary">Our Projects</a>
+                <a href="about.html" class="cta-button secondary">Learn More</a>
+            </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Smart i is a dynamic group of tech enthusiasts from the University of Mines and Technology. We focus on leveraging technology to solve real-world problems while promoting innovation in mathematical sciences.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Our Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of innovative project</p>
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>Creating cutting-edge solutions for real-world problems</p>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of innovative project</p>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Building a strong network of tech enthusiasts</p>
             </div>
-            <!-- Add more project cards as needed -->
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Technology</h3>
+                <p>Leveraging modern tech for practical applications</p>
+            </div>
         </div>
     </section>
 
-    <section id="team">
-        <h2>Our Team</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <img src="C:\Users\OSAFO Enoch Agyei\OneDrive\Desktop\MY PHONE\Snapchat\Snapchat-776290926.jpg" alt="Enoch - Technical Web Developer">
-                <h3>Enoch</h3>
-                <p>Technical Web Developer</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
+    <section class="latest-projects">
+        <h2>Featured Projects</h2>
+        <div class="project-preview-grid">
+            <div class="project-preview">
+                <img src="facial-recognition.jpg" alt="Facial Recognition System">
+                <h3>Facial Recognition System</h3>
+                <p>Advanced attendance tracking solution</p>
+                <a href="projects.html#facial-recognition" class="learn-more">Learn More →</a>
             </div>
-            <!-- Add more team members as needed -->
+            <div class="project-preview">
+                <img src="library-system.jpg" alt="Library System">
+                <h3>Smart Library System</h3>
+                <p>Automated library attendance tracking</p>
+                <a href="projects.html#library-system" class="learn-more">Learn More →</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> Email: contact@smarti.umat.edu.gh</p>
-            <p><i class="fas fa-map-marker-alt"></i> Location: Mathematical Science Department, UMaT</p>
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Innovate?</h2>
+            <p>Join us in shaping the future of technology</p>
+            <a href="contact.html" class="cta-button primary">Get Started</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Smart i. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart i</h3>
+                <p>A tech-driven student community from UMaT's Mathematical Science Department</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Smart i. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
